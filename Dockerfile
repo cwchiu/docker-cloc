@@ -1,4 +1,3 @@
 FROM alpine:3.17.2
-ARG CLOC_VER
-RUN apk add --no-cache cloc=${CLOC_VER}
+RUN apk add --no-cache cloc=1.94-r0
 ENTRYPOINT ["cloc"]
